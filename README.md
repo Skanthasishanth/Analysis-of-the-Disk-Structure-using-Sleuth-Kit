@@ -25,13 +25,17 @@ Interpret the output of the tools to understand the disk structure, including pa
 
 ```
 cd ~/Downloads
+```
 
-# Step 1: Create an empty disk image
+#### Step 1: Create an empty disk image
 
+```
 dd if=/dev/zero of=disk.dd bs=1M count=10
+```
 
-# Step 2: Format it with a file system (like FAT32)
+#### Step 2: Format it with a file system (like FAT32)
 
+```
 mkfs.vfat disk.dd
 ```
 
